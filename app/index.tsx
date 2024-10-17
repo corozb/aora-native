@@ -10,7 +10,7 @@ NativeWindStyleSheet.setOutput({
 export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-3xl">Aora</Text>
+      <Text className="text-3xl color-primary font-pblack">Aora</Text>
       <StatusBar style="auto" />
       <Link href="/profile" style={{ color: "blue" }}>
         Go to Profile
