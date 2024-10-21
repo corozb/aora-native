@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Starter Kit",
-    "slug": "starter",
-    "scheme": "starter-kit",
+    "name": "Aora App",
+    "slug": "aora",
+    "scheme": "aora",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

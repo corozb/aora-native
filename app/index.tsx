@@ -14,7 +14,7 @@ export default function App() {
     <SafeAreaView className="h-full">
       <ScrollView contentContainerStyle={{ height: "100%" }}>
         <View className="flex-1 items-center justify-center bg-white px-4">
-          <Text className="text-3xl color-primary font-pblack">Starter Kit</Text>
+          <Text className="text-3xl color-primary font-pblack">Aora</Text>
           <Text>On boarding page</Text>
           <StatusBar style="auto" />
           <CustomButton
