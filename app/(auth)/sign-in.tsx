@@ -1,10 +1,11 @@
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Image } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import FormField from "@/components/FormField";
 import CustomButton from "@/components/CustomButton";
 import { Link } from "expo-router";
+import { images } from "@/constants";
 
 const SignIn = () => {
   const [form, setForm] = useState({
@@ -17,10 +18,11 @@ const SignIn = () => {
   const submit = () => {};
 
   return (
-    <SafeAreaView className="h-full">
+    <SafeAreaView className="h-full bg-primary">
       <ScrollView>
-        <View className="w-full justify-center min-h-[85vh] px-4 my-6">
-          <Text className="text-2xl text-semibold mt-10 font-psemibold">Log in App</Text>
+        <View className="w-full flex justify-center min-h-[85vh] px-4 my-6">
+          <Image source={images.logo} resizeMode="contain" className="w-[115px] h-[34px]" />
+          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">Log in App</Text>
           <FormField
             title="Email"
             value={form.email}
