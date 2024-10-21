@@ -1,10 +1,11 @@
-import { View, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { Text } from "react-native";
 
 const Profile = () => {
   return (
-    <View>
+    <SafeAreaView className="h-full">
       <Text>Profile</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
