@@ -1,16 +1,22 @@
+import "react-native-url-polyfill/auto";
+import { Redirect, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { View, Text, ScrollView, Image } from "react-native";
-import { Link, router } from "expo-router";
 import { NativeWindStyleSheet } from "nativewind";
 import { SafeAreaView } from "react-native-safe-area-context";
+
 import CustomButton from "@/components/CustomButton";
 import { images } from "@/constants";
+import { useGlobalContext } from "@/context/GlobalProvider";
 
 NativeWindStyleSheet.setOutput({
   default: "native",
 });
 
 export default function App() {
+  const { isLogged, isLoading } = useGlobalContext();
+
+  if (!isLoading && isLogged) return <Redirect href="/home" />;
   return (
     <SafeAreaView className="h-full bg-primary">
       <ScrollView contentContainerStyle={{ height: "100%" }}>
