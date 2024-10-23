@@ -17,6 +17,7 @@
     "components/VideoCard.jsx",
     "components/Trending.jsx",
     "app/(tabs)/home.jsx",
-    "app/search/[query].jsx"
+    "app/search/[query].jsx",
+    "app/(tabs)/profile.tsx"
   ]
 }

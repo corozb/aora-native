@@ -4,11 +4,13 @@ import { View, Text, ScrollView, Image, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images } from "@/constants";
-import { signIn } from "@/lib/appwrite";
+import { getCurrentUser, signIn } from "@/lib/appwrite";
 import FormField from "@/components/FormField";
 import CustomButton from "@/components/CustomButton";
+import { useGlobalContext } from "@/context/GlobalProvider";
 
 const SignIn = () => {
+  const { setUser, setIsLogged } = useGlobalContext();
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -24,9 +26,13 @@ const SignIn = () => {
     setIsSubmitting(true);
 
     try {
-      const result = await signIn(form.email, form.password);
+      await signIn(form.email, form.password);
+      const result = await getCurrentUser();
+      setUser(result);
+      setIsLogged(true);
+
+      Alert.alert("Success", "User signed in successfully");
       router.replace("/home");
-      return result;
     } catch (error) {
       const err = error as Error;
       Alert.alert("Error", err.message);

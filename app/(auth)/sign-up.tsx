@@ -8,8 +8,10 @@ import { createUser } from "../../lib/appwrite";
 
 import FormField from "@/components/FormField";
 import CustomButton from "@/components/CustomButton";
+import { useGlobalContext } from "@/context/GlobalProvider";
 
-const SignIn = () => {
+const SignUp = () => {
+  const { setUser, setIsLogged } = useGlobalContext();
   const [form, setForm] = useState({
     username: "",
     email: "",
@@ -27,8 +29,10 @@ const SignIn = () => {
 
     try {
       const result = await createUser(form.email, form.password, form.username);
+      setUser(result);
+      setIsLogged(true);
+
       router.replace("/home");
-      return result;
     } catch (error) {
       const err = error as Error;
       Alert.alert("Error", err.message);
@@ -76,4 +80,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
