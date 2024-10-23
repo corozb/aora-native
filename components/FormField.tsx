@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { icons } from "@/constants";
 
-interface FormFieldProps {
+export interface FormFieldProps {
   title: string;
   value: string;
   placeholder?: string;
