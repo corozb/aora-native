@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Alert, FlatList, Image, RefreshControl, Text, View } from "react-native";
+import { FlatList, Image, RefreshControl, Text, View } from "react-native";
 import { images } from "@/constants";
 import SearchInput from "@/components/SearchInput";
 import Trending from "@/components/Trending";
@@ -25,7 +25,7 @@ const Home = () => {
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
-        renderItem={({ item }: TrendindProps) => (
+        renderItem={({ item }) => (
           <VideoCard
             title={item.title}
             thumbnail={item.thumbnail}
