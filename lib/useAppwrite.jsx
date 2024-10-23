@@ -11,8 +11,7 @@ const useAppwrite = (fn) => {
       const res = await fn();
       setData(res);
     } catch (error) {
-      const err = error as Error;
-      Alert.alert("Error", err.message);
+      Alert.alert("Error", error.message);
     } finally {
       setLoading(false);
     }
