@@ -257,3 +257,8 @@ Assets and constants used in the project can be found [here](https://drive.googl
 ## 🚀 More Resources
 
 - [Appwrite APKs](https://appwrite.io/docs/sdks)
+
+## Files Picker
+
+- [Image Picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
+  ´´´npx expo install expo-image-picker´´´
