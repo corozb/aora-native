@@ -26,7 +26,7 @@
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Snippets](#snippets)
 6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
+7. 🚀 [More Resources](#more)
 
 ## 🚨 Tutorial
 
@@ -254,6 +254,14 @@ const videos = [
 
 Assets and constants used in the project can be found [here](https://drive.google.com/drive/folders/1pckq7VAoqZlmsEfYaSsDltmQSESKm8h7?usp=sharing)
 
-## 🚀 More Resources
+## <a name="more">🔗 More Resources</a>
 
 - [Appwrite APKs](https://appwrite.io/docs/sdks)
+
+## Files Picker
+
+- [Image Picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
+
+```
+  npx expo install expo-image-picker
+```
