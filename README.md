@@ -65,11 +65,23 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 and many more, including code architecture and reusability
 
+## <a name="wireframes">🔋 Wireframes</a>
+<img width="406" alt="Screenshot 2024-10-24 at 1 42 39 PM" src="https://github.com/user-attachments/assets/6ca27fc4-d73d-4be7-a8ea-e3e2974a447c">
+<img width="399" alt="Screenshot 2024-10-24 at 1 42 47 PM" src="https://github.com/user-attachments/assets/12e78f90-eece-410a-961b-6139bfc4e61c">
+
+<img width="435" alt="Screenshot 2024-10-24 at 1 29 12 PM" src="https://github.com/user-attachments/assets/6573960a-1ffe-49b9-9cdd-8d449a3b29ef">
+<img width="435" alt="Screenshot 2024-10-24 at 1 29 12 PM" src="https://github.com/user-attachments/assets/fdcd1704-cfce-4dc1-80f9-de4a60dcca6c">
+
+<img width="406" alt="Screenshot 2024-10-24 at 1 29 24 PM" src="https://github.com/user-attachments/assets/896b38ab-2a5d-454b-a2a6-f04d7d7d8281">
+<img width="412" alt="Screenshot 2024-10-24 at 1 29 33 PM" src="https://github.com/user-attachments/assets/bef1e348-7f95-48ca-a8c1-eeeb4031ffd8">
+
+
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
 
 **Prerequisites**
+
 
 Make sure you have the following installed on your machine:
 
